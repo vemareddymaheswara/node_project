@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment # Kubernetes resource kind we are creating
+metadata:
+  name: nodejs-image
+spec:
+  selector:
+    matchLabels:
+      app: nodejs-image
+  replicas: 1 # Number of replicas that will be created for this deployment
+  template:
+    metadata:
+      labels:
+        app: nodejs-image
+    spec:
+      containers:
+        - name: nodejs-image
+          image: babu8050796070/nodejs-image-demo:latest # Image that will be used to containers in the cluster
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080 # The port that the container is running on in the cluster
