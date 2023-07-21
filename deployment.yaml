@@ -1,25 +1,3 @@
-# apiVersion: apps/v1
-#kind: Deployment
-#metadata:
- # name: nodejs-image
-#spec:
-#  selector:
- #   matchLabels:
- #     app: nodejs-image
- # replicas: 1
- # template:
- #   metadata:
-  #    labels:
-  #      app: nodejs-image
- #   spec:
-  #    containers:
-  #      - name: nodejs-image
-   #       image: babu8050796070/nodejs-image-demo:latest
-    #      imagePullPolicy: IfNotPresent
-     #     ports:
-     #       - containerPort: 8080 
-
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
