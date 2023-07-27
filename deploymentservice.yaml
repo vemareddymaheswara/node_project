@@ -35,5 +35,5 @@ spec:
   ports:
     - nodeport: 30163
       port: 8080 
-      targetPort: 8080 
+      targetPort: 8080
   
